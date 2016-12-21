@@ -1,6 +1,6 @@
-Unit Tests
+# Unit Tests
 
-1. The Three Laws of TDD:
+### The Three Laws of TDD:
 
 - You may not write production code until you have written a failing unit test.
 
@@ -8,7 +8,7 @@ Unit Tests
 
 - You may not write more production code than is sufficient to pass the currently failing test.
 
-2. F.I.R.S.T.
+### F.I.R.S.T.
 
 - Fast (Tests should run quickly)
 
