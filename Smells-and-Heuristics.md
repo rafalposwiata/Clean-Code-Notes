@@ -29,3 +29,46 @@
 - Tests Require More Than One Step
   
   You should be able to run all the unit tests with just one command.
+
+### Functions
+
+- Too Many Arguments
+  
+  Functions should have a small number of arguments (max 3).
+  
+- Output Arguments
+
+  Output arguments are counterintuitive.
+  
+- Flag Arguments
+
+  Boolean arguments loudly declare that the function does more than one thing. They are confusing and should be eliminated.
+  
+- Dead Function
+
+  Methods that are never called should be discarded.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
