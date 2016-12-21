@@ -68,6 +68,70 @@
 
   Don’t Repeat Yourself!
   
+- Code at Wrong Level of Abstraction
+  
+  It is important to create abstractions that separate higher level general concepts from lower level detailed concepts.
+  
+- Base Classes Depending on Their Derivatives
+
+  In general, base classes should know nothing about their derivatives.
+  
+- Too Much Information
+
+  Well-defined modules have very small interfaces that allow you to do a lot with a little.
+  
+- Dead Code
+
+  Dead code is code that isn’t executed. When you find dead code delete it from the system.
+  
+- Vertical Separation
+
+  Variables and function should be defined close to where they are used.
+  
+- Inconsistency
+
+  If you do something a certain way, do all similar things in the same way.
+  
+- Clutter
+
+  Keep your source files clean, well organized, and free of clutter.
+  
+- Artificial Coupling
+
+  Things that don’t depend upon each other should not be artificially coupled.
+  
+- Feature Envy
+
+  The methods of a class should be interested in the variables and functions of the class they belong to, and not the variables and functions of other classes.
+  
+- Selector Arguments
+
+  In general it is better to have many functions than to pass some code into a function to select the behavior.
+  
+- Obscured Intent
+
+  We want code to be as expressive as possible.
+  
+- Misplaced Responsibility
+
+  Code should be placed where a reader would naturally expect it to be.
+  
+- Inappropriate Static
+
+  If you want a function to be static, make sure that there is no chance that you’ll want it to behave polymorphically.
+  
+- Use Explanatory Variables
+
+  More explanatory variables are generally better than fewer.
+  
+- Function Names Should Say What They Do
+
+  If you have to look at the implementation (or documentation) of the function to know what it does, then you should work to find a better name or rearrange the functionality.
+  
+- Understand the Algorithm
+
+  Before you consider yourself to be done with a function, make sure you understand how it works.
+  
 
   
   
