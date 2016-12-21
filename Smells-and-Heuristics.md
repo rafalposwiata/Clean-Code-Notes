@@ -48,9 +48,27 @@
 
   Methods that are never called should be discarded.
   
+### General
+
+- Multiple Languages in One Source File
+
+- Obvious Behavior Is Unimplemented
+
+  Any function or class should implement the behaviors that another programmer could reasonably expect.
   
+- Incorrect Behavior at the Boundaries
+
+  Every boundary condition must be found and test.
   
+- Overridden Safeties
+
+  Never turn off failing tests and tell yourself you’ll get them to pass later.
   
+- Duplication
+
+  Don’t Repeat Yourself!
+  
+
   
   
   
