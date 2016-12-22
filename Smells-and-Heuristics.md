@@ -131,8 +131,56 @@
 - Understand the Algorithm
 
   Before you consider yourself to be done with a function, make sure you understand how it works.
-  
 
+- Make Logical Dependencies Physical
+
+  If one module depends upon another, that dependency should be physical, not just logical.
+  
+- Prefer Polymorphism to If/Else or Switch/Case
+
+- Follow Standard Conventions
+
+  Every team should follow a coding standard based on common industry norms.
+
+- Replace Magic Numbers with Named Constants
+
+- Be Precise
+
+  When you make a decision in your code, make sure you make it precisely. Know why you have made it and how you will deal with any exceptions.
+  
+- Structure over Convention
+
+  Enforce design decisions with structure over convention.
+  
+- Encapsulate Conditionals
+
+  Extract functions that explain the intent of the conditional.
+  
+- Avoid Negative Conditionals
+
+- Functions Should Do One Thing
+
+- Hidden Temporal Couplings
+  
+  Structure the arguments of your functions such that the order in which they should be called is obvious.
+  
+- Don’t Be Arbitrary
+
+  Have a reason for the way you structure your code, and make sure that reason is communicated by the structure of the code.
+  
+- Encapsulate Boundary Conditions
+
+  Boundary conditions are hard to keep track of. Put the processing for them in one place.
+  
+- Functions Should Descend Only One Level of Abstraction
+
+- Keep Configurable Data at High Levels
+
+  For example create class with all configuration constants.
+  
+- Avoid Transitive Navigation
+
+  In general we don’t want a single module to know much about its collaborators. More specifically, if A collaborates with B, and B collaborates with C, we don’t want modules that use A to know about C.
   
   
   
