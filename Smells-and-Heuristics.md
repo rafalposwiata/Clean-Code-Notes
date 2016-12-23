@@ -194,6 +194,32 @@
 
   Use Enums instead of Constants.
   
+### Names
+
+- Choose Descriptive Names
+
+- Choose Names at the Appropriate Level of Abstraction
+
+- Use Standard Nomenclature Where Possible
+
+  Names are easier to understand if they are based on existing convention or usage.
+  
+- Unambiguous Names
+
+  Choose names that make the workings of a function or variable unambiguous.
+  
+- Use Long Names for Long Scopes
+
+  The length of a name should be related to the length of the scope.
+  
+- Avoid Encodings
+
+  Names should not be encoded with type or scope information (don't use Hungarian notation).
+  
+- Names Should Describe Side-Effects
+
+  Names should describe everything that a function, variable, or class is or does.
+  
   
   
   
