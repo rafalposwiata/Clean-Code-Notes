@@ -182,6 +182,18 @@
 
   In general we don’t want a single module to know much about its collaborators. More specifically, if A collaborates with B, and B collaborates with C, we don’t want modules that use A to know about C.
   
+### Java
+
+- Avoid Long Import Lists by Using Wildcards
+
+- Don’t Inherit Constants
+
+  Don’t use inheritance as a way to cheat the scoping rules of the language. Use a static import instead.
+  
+- Constants versus Enums
+
+  Use Enums instead of Constants.
+  
   
   
   
