@@ -220,23 +220,39 @@
 
   Names should describe everything that a function, variable, or class is or does.
   
+### Tests
+
+- Insufficient Tests
+
+  The tests are insufficient so long as there are conditions that have not been explored by the tests or calculations that have not been validated.
   
+- Use a Coverage Tool!
+
+  Coverage tools reports gaps in your testing strategy.
   
+- Don’t Skip Trivial Tests
+
+  They are easy to write and their documentary value is higher than the cost to produce them.
   
+- An Ignored Test Is a Question about an Ambiguity
+
+  Better option than @Ignore annotation is get rid of unused test. 
+
+- Test Boundary Conditions
   
+- Exhaustively Test Near Bugs
+
+  When you find a bug in a function, it is wise to do an exhaustive test of that function.
   
+- Patterns of Failure Are Revealing
+
+  Sometimes you can diagnose a problem by finding patterns in the way the test cases fail.
   
+- Test Coverage Patterns Can Be Revealing
+
+  Looking at the code that is or is not executed by the passing tests gives clues to why the failing tests fail.
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+- Tests Should Be Fast
+
+  A slow test is a test that won’t get run.
   
