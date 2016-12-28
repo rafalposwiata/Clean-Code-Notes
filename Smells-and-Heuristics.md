@@ -52,6 +52,8 @@
 
 - Multiple Languages in One Source File
 
+  The ideal is for a source file to contain one, and only one, language.
+
 - Obvious Behavior Is Unimplemented
 
   Any function or class should implement the behaviors that another programmer could reasonably expect.
@@ -199,6 +201,8 @@
 - Choose Descriptive Names
 
 - Choose Names at the Appropriate Level of Abstraction
+
+  Don’t pick names that communicate implementation; choose names the reflect the level of abstraction of the class or function you are working in.
 
 - Use Standard Nomenclature Where Possible
 
