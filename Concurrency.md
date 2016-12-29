@@ -1,5 +1,41 @@
 # Concurrency
 
+### Basic definitions
+
+- Bound Resources 
+
+  Resources of a fixed size or number used in a concurrent environment. Examples include database connections and fixed-size read/write buffers.
+
+- Mutual Exclusion 
+
+  Only one thread can access shared data or a shared resource at a time.
+
+- Starvation 
+
+  One thread or a group of threads is prohibited from proceeding for an excessively long time or forever. For example, always letting fast-running threads through first could starve out longer running threads if there is no end to the fast-running threads.
+
+- Deadlock 
+
+  Two or more threads waiting for each other to finish. Each thread has a resource that the other thread requires and neither can finish until it gets the other resource.
+
+- Livelock 
+
+  Threads in lockstep, each trying to do work but finding another “in the way.” Due to resonance, threads continue trying to make progress but are unable to for an excessively long time or forever.
+  
+### Recommendations
+
+- Keep your concurrency-related code separate from other code.
+
+- Severely limit the access of any data that may be shared.
+
+- Attempt to partition data into independent subsets than can be operated on by independent threads, possibly in different processors.
+
+- Review the classes available to you. In the case of Java, become familiar with java.util.concurrent, java.util.concurrent.atomic, java.util.concurrent.locks
+
+- Keep your synchronized sections as small as possible.
+
+- Think about shut-down early and get it working early. It’s going to take longer than you expect.
+
 ### Executor Framework
 
 The Executor framework (from java.util.concurrent package) will pool threads, resize automatically, and recreate threads
