@@ -88,5 +88,32 @@ Two or more threads waiting for each other to finish. Each thread has a resource
 
   This is also referred to as the deadly embrace. Imagine two threads, T1 and T2, and two resources, R1 and R2. T1 has R1, T2 has R2. T1 also requires R2, and T2 also requires R1. Solution: if all threads can agree on a global ordering of resources and if they all allocate resources in that order, then deadlock is impossible.
 
+### Testing Multithreaded Code
 
+Recommendations for testing multithreaded Code:
 
+- Treat spurious failures as candidate threading issues.
+
+  Do not ignore system failures as one-offs.
+
+- Get your nonthreaded code working first.
+
+  Do not try to chase down nonthreading bugs and threading bugs at the same time. Make sure your code works outside of threads.
+
+- Make your threaded code pluggable.
+
+  Make your thread-based code especially pluggable so that you can run it in various configurations.
+
+- Make your threaded code tunable.
+
+  Allow the number of threads to be easily tuned. Consider allowing self-tuning based on throughput and system utilization.
+
+- Run with more threads than processors.
+
+- Run on different platforms.
+
+  Run your threaded code on all target platforms early and often.
+
+- Instrument your code to try and force failures.
+
+  There are two options for code instrumentation: hand-coded and automated.
