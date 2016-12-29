@@ -25,3 +25,32 @@ When your client code uses two methods which must be synchronized together then 
 - Tolerate the failure.
 - Solve the problem by changing the client: client-based locking
 - Solve the problem by changing the server, which additionally changes the client: server-based locking
+
+### Deadlock
+
+Two or more threads waiting for each other to finish. Each thread has a resource that the other thread requires and neither can finish until it gets the other resource. To really solve the problem of deadlock, we need to understand what causes it. There are four conditions required for deadlock to occur:
+
+- Mutual exclusion
+
+  Mutual exclusion occurs when multiple threads need to use the same resources and those resources can not be used by multiple threads at the same time or are limited in number. One strategy for avoiding deadlock is to sidestep the mutual exclusion condition. You might be able to do this by:
+  
+  - Using resources that allow simultaneous use, for example, AtomicInteger.
+  
+  - Increasing the number of resources such that it equals or exceeds the number of competing threads.
+  
+  - Checking that all your resources are free before seizing any.
+
+- Lock & wait
+
+  Once a thread acquires a resource, it will not release the resource until it has acquired all of the other resources it requires and has completed its work. You can eliminate this by refuse to wait. Check each resource before you seize it, and release all resources and start over if you run into one that’s busy. This approach can cause problems like Starvation or Livelock.
+
+- No preemption
+
+  One thread cannot take resources away from another thread. Once a thread holds a resource, the only way for another thread to get it is for the holding thread to release it. Strategy for avoiding deadlock is to allow threads to take resources away from other threads. When a thread discovers that a resource is busy, it asks the owner to release it. If the owner is also waiting for some other resource, it releases them all and starts over.
+  
+- Circular wait
+
+  This is also referred to as the deadly embrace. Imagine two threads, T1 and T2, and two resources, R1 and R2. T1 has R1, T2 has R2. T1 also requires R2, and T2 also requires R1. Solution: if all threads can agree on a global ordering of resources and if they all allocate resources in that order, then deadlock is impossible.
+
+
+
